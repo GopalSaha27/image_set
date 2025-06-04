@@ -62,8 +62,43 @@ class BasicApp extends StatelessWidget {
         //     Text('Shoe')
         //   ],
         // ),
-
-
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("Hello Gopal..."),
+            Row(
+              children: [
+                Text("Hello Programmer..."),
+                Image.network(
+                  "https://t3.ftcdn.net/jpg/06/12/00/18/360_F_612001823_TkzT0xmIgagoDCyQ0yuJYEGu8j6VNVYT.jpg",
+                  width: 100,
+                  fit: BoxFit.cover,
+                ),
+                Text("Hello World"),
+                Text("Mobile App Developer"),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Image.network(
+                  "https://t3.ftcdn.net/jpg/06/12/00/18/360_F_612001823_TkzT0xmIgagoDCyQ0yuJYEGu8j6VNVYT.jpg",
+                  width: 100,
+                  fit: BoxFit.cover,
+                ),
+              ],
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text("Hello"),
+                Text("Tony"),
+                Text("Stark"),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
